@@ -30,6 +30,7 @@ public class Prueba06_Lambdas {
                 .forEach(a-> System.out.println(a));
 
         //AGRUPAR
+        System.out.println("****************************************************");
         Map<String,List<Articulo>> artmap = new HashMap<>();
         artmap = lista.stream()
                 .collect(Collectors.groupingBy(Articulo::getOrigen));
